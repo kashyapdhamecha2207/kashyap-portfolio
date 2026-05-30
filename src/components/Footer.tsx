@@ -1,15 +1,15 @@
-
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="bg-background text-black py-12 border-t border-neutral-200/80">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center">
-          <p className="text-gray-400">
-            © 2024 Kashyap R Dhamecha. All rights reserved.
-          </p>
-          <p className="text-gray-500 text-sm mt-2">
-            Built with passion and dedication to excellence.
-          </p>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="text-sm font-extrabold tracking-tight">
+            Kashyap<span className="text-neutral-400 font-normal"> Dhamecha</span>
+          </div>
+          <div className="text-xs text-neutral-400 text-center sm:text-right space-y-1">
+            <p>© {new Date().getFullYear()} Kashyap R Dhamecha. All rights reserved.</p>
+            <p className="text-[10px] text-neutral-300 uppercase tracking-widest">Built with passion & precision</p>
+          </div>
         </div>
       </div>
     </footer>
