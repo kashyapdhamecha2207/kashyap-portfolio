@@ -1,0 +1,7 @@
+# Kashyap R Dhamecha
+
+> Portfolio of Kashyap R Dhamecha — B.Tech Computer Science & Engineering student and full-stack developer building modern web experiences with React, TypeScript, and Node.js.
+
+## Pages
+
+- [Home](/): Overview, hero, about, projects, skills, and contact for Kashyap R Dhamecha.
