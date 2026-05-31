@@ -54,7 +54,7 @@ const About = () => {
                 {/* Timeline node */}
                 <div className="absolute -left-[30px] top-1.5 w-4.5 h-4.5 rounded-full bg-violet-600 border-4 border-white dark:border-zinc-950 shadow-xs"></div>
                 <div>
-                  <span className="text-xs font-bold text-violet-500 block uppercase">2024 — 2028 (Expected)</span>
+                  <span className="text-xs font-bold text-violet-500 block uppercase">2024 — 2028</span>
                   <h4 className="text-lg font-bold text-neutral-900 dark:text-white mt-1">Bachelor of Technology (B.Tech)</h4>
                   <p className="text-sm font-semibold text-neutral-600 dark:text-neutral-300">Computer Science and Engineering</p>
                   <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1">Rai University • Currently in 5th Semester</p>

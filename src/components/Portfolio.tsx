@@ -6,7 +6,7 @@ interface PortfolioProps {
 }
 
 const Portfolio = ({ hoveredSkillCategory }: PortfolioProps) => {
-  const [activeTab, setActiveTab] = useState<'All' | 'Full-Stack' | 'Frontend Clones' | 'Figma Designs'>('All');
+  const [activeTab, setActiveTab] = useState<'All' | 'Full-Stack' | 'Frontend' | 'Figma Designs'>('All');
 
   const projects = [
     {
@@ -29,7 +29,7 @@ const Portfolio = ({ hoveredSkillCategory }: PortfolioProps) => {
       title: "Sudoku Game",
       description: "Interactive 9x9 Sudoku board game featuring difficulty levels and automated error validation.",
       tech: ["HTML", "CSS", "JavaScript"],
-      category: "Frontend Clones",
+      category: "Frontend",
       status: "Completed",
       demoLink: "https://sudokubykashyap.netlify.app/",
       codeLink: "https://github.com/kashyapdhamecha2207/sudoku",
@@ -40,18 +40,18 @@ const Portfolio = ({ hoveredSkillCategory }: PortfolioProps) => {
       title: "Chess Interface",
       description: "A visually polished responsive chess board interface constructed with semantic layouts.",
       tech: ["HTML", "CSS"],
-      category: "Frontend Clones",
+      category: "Frontend",
       status: "Completed",
       demoLink: "https://chessbykashyap.netlify.app/",
       codeLink: "https://github.com/kashyapdhamecha2207/chess",
-      themeClass: "bg-amber-50/30 dark:bg-amber-950/20 border-amber-100 dark:border-amber-900/60 hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-50/60 dark:hover:bg-amber-950/40 text-amber-900 dark:text-amber-250",
+      themeClass: "bg-amber-50/30 dark:bg-amber-950/20 border-amber-100 dark:border-amber-900/60 hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-50/60 dark:hover:bg-amber-950/40 text-amber-900 dark:text-amber-200",
       tagClass: "bg-amber-100/60 dark:bg-amber-900/40 text-amber-800 dark:text-amber-200 border-amber-250 dark:border-amber-800"
     },
     {
       title: "Netflix Clone",
       description: "A pixel-perfect responsive clone of the Netflix home streaming page structure and UI.",
       tech: ["HTML", "CSS"],
-      category: "Frontend Clones",
+      category: "Frontend",
       status: "Completed",
       demoLink: "https://netfliksbykashyap.netlify.app/",
       codeLink: "https://github.com/kashyapdhamecha2207/netflix-clone",
@@ -62,7 +62,7 @@ const Portfolio = ({ hoveredSkillCategory }: PortfolioProps) => {
       title: "RedBus Clone",
       description: "Static replica of the RedBus bus booking platform landing page, focusing on layout integrity.",
       tech: ["HTML", "CSS"],
-      category: "Frontend Clones",
+      category: "Frontend",
       status: "Completed",
       demoLink: "https://redbusbykashyap.netlify.app/",
       codeLink: "",
@@ -73,7 +73,7 @@ const Portfolio = ({ hoveredSkillCategory }: PortfolioProps) => {
       title: "Tic-Tac-Toe",
       description: "Classic two-player Tic-Tac-Toe featuring dynamic score tracking and visual board animations.",
       tech: ["HTML", "CSS", "JavaScript"],
-      category: "Frontend Clones",
+      category: "Frontend",
       status: "Completed",
       demoLink: "https://tictactoebykashyap.netlify.app/",
       codeLink: "https://github.com/kashyapdhamecha2207/tic-tac-toe",
@@ -110,7 +110,7 @@ const Portfolio = ({ hoveredSkillCategory }: PortfolioProps) => {
       status: "UI Design",
       demoLink: "https://www.figma.com/design/nHt5MDiu9oWInoGqvr2PYs/Untitled?node-id=0-1&t=wxvss1NTHRrI8hC8-1",
       codeLink: "",
-      themeClass: "bg-pink-50/30 dark:bg-pink-950/20 border-pink-100 dark:border-pink-900/60 hover:border-pink-500 dark:hover:border-pink-500 hover:bg-pink-50/60 dark:hover:bg-pink-950/40 text-pink-900 dark:text-pink-200",
+      themeClass: "bg-pink-50/30 dark:bg-pink-950/20 border-pink-100 dark:border-pink-900/60 hover:border-pink-500 dark:hover:border-pink-500 hover:bg-pink-50/60 dark:hover:bg-pink-950/40 text-pink-905 dark:text-pink-200",
       tagClass: "bg-pink-100/60 dark:bg-pink-900/40 text-pink-800 dark:text-pink-200 border-pink-250 dark:border-pink-800"
     },
     {
@@ -140,7 +140,7 @@ const Portfolio = ({ hoveredSkillCategory }: PortfolioProps) => {
     );
   };
 
-  const tabs = ['All', 'Full-Stack', 'Frontend Clones', 'Figma Designs'] as const;
+  const tabs = ['All', 'Full-Stack', 'Frontend', 'Figma Designs'] as const;
   const filteredProjects = projects.filter(p => activeTab === 'All' || p.category === activeTab);
 
   const renderProjectGrid = (projectList: typeof projects) => {
@@ -361,7 +361,7 @@ const Portfolio = ({ hoveredSkillCategory }: PortfolioProps) => {
                       ) : (
                         <button 
                           disabled
-                          className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 border border-dashed border-neutral-300 dark:border-neutral-750 text-neutral-450 dark:text-neutral-550 rounded-xl text-sm font-semibold cursor-not-allowed flex items-center justify-center gap-1.5"
+                          className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 border border-dashed border-neutral-300 dark:border-neutral-750 text-neutral-455 dark:text-neutral-550 rounded-xl text-sm font-semibold cursor-not-allowed flex items-center justify-center gap-1.5"
                         >
                           <Lock className="w-3.5 h-3.5" />
                           <span>Private Repo</span>
@@ -383,7 +383,7 @@ const Portfolio = ({ hoveredSkillCategory }: PortfolioProps) => {
                     02 / Web Creations
                   </span>
                 </div>
-                {renderProjectGrid(projects.filter(p => !p.isFeatured && p.category === 'Frontend Clones'))}
+                {renderProjectGrid(projects.filter(p => !p.isFeatured && p.category === 'Frontend'))}
               </div>
 
               {/* Figma Designs Section */}
