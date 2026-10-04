@@ -74,7 +74,7 @@ const Hero = () => {
             <div className="relative p-2 bg-white dark:bg-zinc-900 border border-neutral-200 dark:border-neutral-800 rounded-[2.5rem] shadow-xs max-w-xs w-full aspect-square md:max-w-sm">
               <div className="w-full h-full rounded-[2.2rem] overflow-hidden bg-neutral-100 dark:bg-neutral-800">
                 <img 
-                  src="https://i.postimg.cc/LXVrxxXh/Kashyap.jpg" 
+                  src="/profile.jpg" 
                   alt="Kashyap R Dhamecha"
                   className="w-full h-full object-cover transition-all duration-700 ease-out scale-105 hover:scale-100"
                 />
@@ -116,10 +116,10 @@ const Hero = () => {
                 Get In Touch
               </button>
               <a 
-                href="https://drive.google.com/file/d/1ivAIpdaU_JgQTHHUP0lZycq_JsmbhbwO/view?usp=drive_link" 
+                href="https://drive.google.com/file/d/1tcYIa8Ce8mRSYV_etV1cPWgINwk4vh1j/view" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="border border-neutral-300 dark:border-neutral-700 text-black dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-850 px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2"
+                className="border border-neutral-300 dark:border-neutral-700 text-black dark:text-white hover:bg-neutral-100 hover:text-black dark:hover:bg-white dark:hover:text-black dark:hover:border-white px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2"
               >
                 <Download className="w-4 h-4" />
                 Resume
