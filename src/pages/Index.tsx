@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Portfolio from '../components/Portfolio';
 import Skills from '../components/Skills';
+import LeetCodeStats from '../components/LeetCodeStats';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import { Toaster } from '../components/ui/toaster';
@@ -19,6 +20,7 @@ const Index = () => {
         <About />
         <Portfolio hoveredSkillCategory={hoveredSkillCategory} />
         <Skills hoveredCategory={hoveredSkillCategory} setHoveredCategory={setHoveredSkillCategory} />
+        <LeetCodeStats />
         <Contact />
       </main>
       <Footer />

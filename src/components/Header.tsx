@@ -107,6 +107,12 @@ const Header = () => {
               Skills
             </button>
             <button 
+              onClick={() => scrollToSection('leetcode')}
+              className="text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white font-medium text-sm transition-colors duration-300"
+            >
+              LeetCode
+            </button>
+            <button 
               onClick={() => scrollToSection('contact')}
               className="text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white font-medium text-sm transition-colors duration-300"
             >
@@ -178,6 +184,12 @@ const Header = () => {
                 className="text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white font-medium text-base transition-colors duration-300 text-left py-1"
               >
                 Skills
+              </button>
+              <button 
+                onClick={() => scrollToSection('leetcode')}
+                className="text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white font-medium text-base transition-colors duration-300 text-left py-1"
+              >
+                LeetCode
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
